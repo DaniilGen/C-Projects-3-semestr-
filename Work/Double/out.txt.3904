@@ -1,0 +1,103 @@
+execve("./a.out", ["./a.out"], 0x7ffc0cb31500 /* 49 vars */) = 0
+brk(NULL)                               = 0x56083a338000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6884bf3000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (Нет такого файла или каталога)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=69878, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 69878, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f6884be1000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=891304, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 893160, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6884b06000
+mmap(0x7f6884b13000, 458752, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0x7f6884b13000
+mmap(0x7f6884b83000, 376832, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7d000) = 0x7f6884b83000
+mmap(0x7f6884bdf000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd8000) = 0x7f6884bdf000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\223\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\200\0\300\4\0\0\0\1\0\0\0\0\0\0\0", 32, 848) = 32
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\335~7a\231\333\307\256\207\267%F\271\34\267\211"..., 68, 880) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2049032, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2101136, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f6884905000
+mmap(0x7f688492d000, 1499136, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7f688492d000
+mmap(0x7f6884a9b000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x196000) = 0x7f6884a9b000
+mmap(0x7f6884af3000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ed000) = 0x7f6884af3000
+mmap(0x7f6884af9000, 53136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f6884af9000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f6884902000
+arch_prctl(ARCH_SET_FS, 0x7f6884902740) = 0
+set_tid_address(0x7f6884902a10)         = 3904
+set_robust_list(0x7f6884902a20, 24)     = 0
+mprotect(0x7f6884af3000, 16384, PROT_READ) = 0
+mprotect(0x7f6884bdf000, 4096, PROT_READ) = 0
+mprotect(0x560838d53000, 4096, PROT_READ) = 0
+mprotect(0x7f6884c25000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7f6884be1000, 69878)           = 0
+rt_sigaction(SIGCHLD, {sa_handler=0x560838d51255, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f6884942af0}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+getrandom("\x9f\x48\xaf\x40\x16\x03\x96\x84", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x56083a338000
+brk(0x56083a359000)                     = 0x56083a359000
+write(1, "\320\232\320\276\320\273\320\270\321\207\320\265\321\201\321\202\320\262\320\276 \321\200\320\260\320\267\320\261\320\270\320"..., 70) = 70
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+read(0, "100001 6 9\n", 1024)           = 11
+pipe([3, 4])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6884902a10) = 3911
+close(4)                                = 0
+pipe([4, 5])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6884902a10) = 3912
+close(5)                                = 0
+pipe([5, 6])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6884902a10) = 3913
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3911, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, WNOHANG, NULL)          = 3911
+wait4(-1, NULL, WNOHANG, NULL)          = 0
+rt_sigreturn({mask=[]})                 = 3913
+close(6)                                = 0
+pipe([6, 7])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f6884902a10) = 3914
+close(7)                                = 0
+poll([{fd=3, events=POLLIN}, {fd=4, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}], 4, -1) = 1 ([{fd=3, revents=POLLIN|POLLHUP}])
+read(3, "\361m\237E\2321\261?", 8)      = 8
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3912, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, WNOHANG, NULL)          = 3912
+wait4(-1, NULL, WNOHANG, NULL)          = 0
+rt_sigreturn({mask=[]})                 = 8
+read(3, "", 8)                          = 0
+write(1, "\n", 1)                       = 1
+poll([{fd=3, events=POLLIN}, {fd=4, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}], 4, -1) = 2 ([{fd=3, revents=POLLHUP}, {fd=4, revents=POLLIN|POLLHUP}])
+write(1, "closing [0] 3 3\n", 16)       = 16
+close(3)                                = 0
+read(4, "s\250|\0\374{\341?", 8)        = 8
+read(4, "", 8)                          = 0
+write(1, "\n", 1)                       = 1
+poll([{fd=-1}, {fd=4, events=POLLIN}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}], 4, -1) = 1 ([{fd=4, revents=POLLHUP}])
+write(1, "closing [1] 4 4\n", 16)       = 16
+close(4)                                = 0
+poll([{fd=-1}, {fd=-1}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}], 4, -1) = 1 ([{fd=6, revents=POLLIN|POLLHUP}])
+read(6, "\"\6\314\30\22\320\340?", 8)   = 8
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3914, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+wait4(-1, NULL, WNOHANG, NULL)          = 3913
+wait4(-1, NULL, WNOHANG, NULL)          = 3914
+wait4(-1, NULL, WNOHANG, NULL)          = -1 ECHILD (Нет дочерних процессов)
+rt_sigreturn({mask=[]})                 = 8
+read(6, "", 8)                          = 0
+write(1, "\n", 1)                       = 1
+poll([{fd=-1}, {fd=-1}, {fd=5, events=POLLIN}, {fd=6, events=POLLIN}], 4, -1) = 2 ([{fd=5, revents=POLLIN|POLLHUP}, {fd=6, revents=POLLHUP}])
+read(5, "\235]\276\6\333o\347?", 8)     = 8
+read(5, "", 8)                          = 0
+write(1, "\n", 1)                       = 1
+write(1, "closing [3] 6 6\n", 16)       = 16
+close(6)                                = 0
+poll([{fd=-1}, {fd=-1}, {fd=5, events=POLLIN}, {fd=-1}], 4, -1) = 1 ([{fd=5, revents=POLLHUP}])
+write(1, "closing [2] 5 5\n", 16)       = 16
+close(5)                                = 0
+write(1, "\n", 1)                       = 1
+write(1, "Integral: 1.871351 \n", 20)   = 20
+lseek(0, -1, SEEK_CUR)                  = -1 ESPIPE (Недопустимая операция смещения)
+exit_group(0)                           = ?
++++ exited with 0 +++

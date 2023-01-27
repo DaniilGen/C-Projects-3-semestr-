@@ -23,22 +23,9 @@ char *swapl(char *s){
 }
 
 int main(){
-  char str1[]="POrls";
-  char *str2="POrls";
-
-  char *p1,*p2;
-  p1=str1;
-  p2=str2;
-
-
-  printf("%p \n", p1);
-  printf("%p \n", p2);
-  *p1='x';
-  ***p2='x';
-  printf("%s \n", p1);
-  printf("%s \n", p2);
-  // char *lp;
-  // printf("%s \n", str );
-  // lp=swapl(str);
-  // printf("%s \n", lp );
+  char str[]="POrls";
+  char *lp;
+  printf("%s \n", str );
+  lp=swapl(str);
+  printf("%s \n", lp );
 }

@@ -1,3 +1,3 @@
-# C-Projects-3-semestr-
+# CProjects3semester
 Exercises
-MEPHI 3rd semestr Programming technologies and methods
+MEPHI 3rd semester Programming technologies and methods
